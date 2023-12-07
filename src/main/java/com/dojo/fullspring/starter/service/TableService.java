@@ -44,7 +44,11 @@ public class TableService {
 	
 	public List<Tables> getAssignedTables(User server){
 
-       	List<Tables> Tablesss = tableRepo.findAll();
+        //List<Tables> Tablesss = tableRepo.findAll();
+
+	    //bonus
+		List<Tables>Tablesss = tableRepo.findAllByOrderByCreatedAtAsc();
+
 
 		List<Tables> matchingTabless = new ArrayList<>(); 
 

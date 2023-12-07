@@ -48,12 +48,8 @@
                                         <fmt:formatDate value="${table.createdAt}" pattern="MMMM dd hh:mm aa" />
                                     </td>
                                     <td>
-                                        <c:if test="${table.server.id == user.id}">
-                                            <a href="/tables/delete/${table.id}">Finished</a>&nbsp;&nbsp;
-                                        </c:if>
-                                        <c:if test="${table.server.id == user.id}">
-                                            <a href="/tables/edit/${table.id}">Edit</a>&nbsp;&nbsp;
-                                        </c:if>
+                                        <a href="/tables/delete/${table.id}">Finished</a>&nbsp;&nbsp;
+                                        <a href="/tables/edit/${table.id}">Edit</a>&nbsp;&nbsp;
                                         <a href="/dashboard/remove/${table.id}">Give Up Table</a>&nbsp;&nbsp;
                                     </td>
                                 </tr>
